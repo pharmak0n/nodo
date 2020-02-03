@@ -1,0 +1,150 @@
+/* DEBUG */
+
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { } */
+
+
+body {
+  background-color: #bc2132;
+}
+
+@font-face {
+  font-family:'Questrial', sans-serif;
+  src: url('font/Questrial-Regular.ttf');
+}
+
+h1 {
+  font-family: Helvetica-Bold, sans-serif;
+  font-size: 3em;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+h2 {
+  font-family: 'Questrial', Helvetica-Regular, sans-serif;
+  font-size: 1.125em;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.container-slides {
+  justify-content: flex-start;
+  margin-top: 130px;
+}
+
+.container .row {
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.container .row .testo {
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+hr {
+    background-color: #FFFFFF;
+    border-width:0;
+    color: #FFFFFF;
+    height:2px;
+    line-height:0;
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: center;
+}
+
+hr:after {
+  font-size:1.25em;
+  position: absolute;
+  left: -0.5em;
+}
+
+.testo {
+  margin-top: 50px;
+}
+
+label {
+  text-align: left;
+  font-family: 'Questrial', Helvetica-Regular, sans-serif;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+.icon-place {
+  width: 55px;
+  height: 55px;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+
+  h1 {
+    font-family: Helvetica-Bold, sans-serif;
+    font-size: 5em;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .container-slides {
+      justify-content: center;
+  }
+
+  .container .row {
+    justify-content:center;
+  }
+
+  .container .row .testo {
+    justify-content:center;
+  }
+
+  hr {
+    margin-left: 60px;
+    margin-right:60px;
+    text-align: center;
+  }
+
+  label {
+    text-align: left;
+    font-family: 'Questrial', Helvetica-Regular, sans-serif;
+    font-size: 1em;
+    color: #FFFFFF;
+  }
+
+  .icon-place {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+  /* .btn {
+    margin-left: 0px;
+    margin-right: 30px;
+    padding-left: 0px;
+  }
+
+  a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-style: Helvetica-Regular, sans-serif;
+  }
+
+  a:hover {
+      color: #bc2132;
+      text-decoration: none;
+      font-style: Helvetica-Bold, sans-serif;
+  } */
