@@ -17,6 +17,17 @@ body.body-ar-gif {
   overflow: hidden;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #bc2132;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
 .logo {
   width: 200px;
   height: 80px;

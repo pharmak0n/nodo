@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>isia - da2 2019</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="lib/jquery-3.3.1.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <script src="lib/aframe.min.js"></script>
+  <script src="lib/aframe-ar.min.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+
+<body class="body-ar">
+
+  <header>
+    <p class="mb-1">Destinazione</p>
+    <h4>Malattie Endocrine del Ricambio e della Nutrizione</h4>
+  </header>
+
+
+  <div id="call-to-action">
+    <a href="...">Scopri di più...</a>
+  </div>
+  <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; detectionMode: color_and_matrix; patternRatio: 0.9; debugUIEnabled: false;">
+
+    <a-assets>
+      <img id="ar_wayfing_arrow_mono" src="assets/arrows/gfx_arrow_mono.png">
+      <img id="ar_wayfing_arrow_top" src="assets/arrows/gfx_arrow_top.png">
+      <img id="ar_wayfing_arrow_top_left" src="assets/arrows/gfx_arrow_top_right.png">
+    </a-assets>
+
+
+    <a-marker type="pattern" url="markers/db/m_source__1.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__2.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 45 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__3.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 90 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__4.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 135 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__5.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 180 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__6.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 225 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__7.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__8.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 315 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__9.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__10.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <!-- here define the content to display on top of the marker -->
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 45 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+
+
+
+
+    <!-- define a simple camera -->
+    <a-entity camera></a-entity>
+
+  </a-scene>
+</body>
+</html>
