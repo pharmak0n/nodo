@@ -6,16 +6,27 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 
+  <link rel="stylesheet" href="style.css">
   <script src="lib/aframe.min.js"></script>
-  <script src="lib/aframe-ar.js"></script>
+  <script src="lib/aframe-ar.min.js"></script>
   <script src="js/custom.js"></script>
+
+  <script src="sw.js"></script>
+
 </head>
 
 <body class="body-ar">
+
+  <header>
+    <p class="mb-1">Destinazione</p>
+    <h4>?</h4>
+  </header>
+
+
   <div id="call-to-action">
-    <a href="https://it.wikipedia.org/wiki/Snake">Scopri di più...</a>
+    <a href="...">Scopri di più...</a>
   </div>
   <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; detectionMode: color_and_matrix; patternRatio: 0.9; debugUIEnabled: false;">
 
@@ -25,21 +36,248 @@
       <img id="ar_wayfing_arrow_top_left" src="assets/arrows/gfx_arrow_top_right.png">
     </a-assets>
 
-
-    <a-marker type="pattern" url="markers/patt/marker_002_8x8_a_square_source.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
-      <!-- here define the content to display on top of the marker -->
-      <a-plane markerhandler src="#my-image" width="0.8" height="1.4" rotation="-90 0 0" scale="3.5 3.5 3.5" position="0 0 -0.2"></a-plane>
+    <a-marker type="pattern" url="markers/db/m_source__1.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
     </a-marker>
 
-    <a-marker type="pattern" url="markers/patt/marker_003_8x8_a_square_source.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
-      <!-- here define the content to display on top of the marker -->
-      <a-plane markerhandler src="#my-image" width="0.8" height="1.4" rotation="-90 0 0" scale="3.5 3.5 3.5" position="0 0 -0.2"></a-plane>
+    <a-marker type="pattern" url="markers/db/m_source__2.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
     </a-marker>
 
-    <a-marker type="pattern" url="markers/patt/marker_004_8x8_a_square_source.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
-      <!-- here define the content to display on top of the marker -->
-      <a-plane markerhandler src="#my-image" width="0.8" height="1.4" rotation="-90 0 0" scale="3.5 3.5 3.5" position="0 0 -0.2"></a-plane>
+    <a-marker type="pattern" url="markers/db/m_source__3.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
     </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__4.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__5.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__6.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__7.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__8.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__9.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__10.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__11.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__12.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__13.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__14.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__15.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__16.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__17.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__18.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__19.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__20.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__21.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__22.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__23.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__24.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__25.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 180 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__26.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 135 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__27.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 90 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__28.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__29.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 315 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__30.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__31.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__32.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__33.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__34.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__35.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__36.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__37.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 315 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__38.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 90 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__39.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 90 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__40.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__41.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__42.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 315 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__43.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 45 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__44.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__45.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__46.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__47.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 180 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__48.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 90 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__49.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+<!--
+    <a-marker type="pattern" url="markers/db/m_source__50.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 90 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__51.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 180 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__52.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__53.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__54.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__55.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__56.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__57.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 270 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__58.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 0 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__59.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 180 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker>
+
+    <a-marker type="pattern" url="markers/db/m_source__60.patt" smooth="true" smoothCount="10" smoothTolerance="0.1" smoothThreshold="5">
+      <a-plane markerhandler src="#ar_wayfing_arrow_top" width="1" height="1" rotation="-90 225 0" scale="2.0 2.0 2.0" position="0 0 0"></a-plane>
+    </a-marker> -->
+
+
 
     <!-- define a simple camera -->
     <a-entity camera></a-entity>
